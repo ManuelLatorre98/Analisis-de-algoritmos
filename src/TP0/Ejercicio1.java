@@ -15,21 +15,21 @@ public class Ejercicio1 {
 			long inicio=System.nanoTime();
 			
 			//PRIMER MANERA, El promedio de tiempo de ejecucion en ns me da un poco mas alto que con la segunda
-			while ((linea = bufferLectura.readLine()) != null) {
+			/*while ((linea = bufferLectura.readLine()) != null) {
 				bufferEscritura.write(linea.replace(" ", "")+"\n");//Los espacios entre lineas cuentan? borrar \n si es asi
-            }//452500ns
+            }//452500ns*/
 			
 			//SEGUNDA MANERA, El promedio de ejecucion en ns da un poco menor que en la primera
-			/*char caracter;
+			char caracter;
 			while((linea = bufferLectura.readLine()) !=null) {
 				for (int i = 0; i < linea.length(); i++) {
 					if((caracter=linea.charAt(i))!=' ') {
 						bufferEscritura.write(caracter);
 					}
-					linea.replace("", " ");
+					
 				}
 				bufferEscritura.write("\n");//Borrar si tambien habia que eliminar los espacios en blanco
-			}//242600ns bastante mas eficiente que con replace*/
+			}//242600ns bastante mas eficiente que con replace
 			
 			long fin=System.nanoTime();
 			System.out.println("EXITO AL EJECUTAR. TIEMPO DE EJECUCION: "+ (fin-inicio)+"ns");

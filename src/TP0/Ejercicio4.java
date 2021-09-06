@@ -10,11 +10,10 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 		try {
 			BufferedWriter bufferEscritura= new BufferedWriter(new FileWriter("src/TP0/cadenasRandom"));
-			long inicio=System.nanoTime();
 			Random generador = new Random();
 			int tipo;
 			String cadena="";
-			
+			long inicio=System.nanoTime();
 			/*for (int i = 0; i < 100; i++) {
 				cadena+=(char)(generador.nextInt(123 - 97) + 97)+" ";
 			}
@@ -25,9 +24,9 @@ public class Ejercicio4 {
 					if(tipo==0) {//genero cadena de numeros
 						cadena+=(char)(generador.nextInt(58 - 48) + 48);
 					}else {
-						if(tipo==1) {
+						if(tipo==1) {//Genero mayus
 							cadena+=(char)(generador.nextInt(91 - 65) + 65);
-						}else {
+						}else {//Genero minus
 							cadena+=(char)(generador.nextInt(123 - 97) + 97);
 						}
 					}
