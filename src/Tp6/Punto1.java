@@ -46,9 +46,7 @@ public class Punto1 {
 		if(n == 0 || n == 1){
 	        return 1;
 	    }
-
 	    return encontrarNumeroFibonacci_recursivo(n-1) + encontrarNumeroFibonacci_recursivo(n-2);
 	}
 	
-
 }
